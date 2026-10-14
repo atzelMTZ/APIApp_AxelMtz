@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crypt Cinema | Horror Movies &amp; Characters</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <span class="logo">🎃 Crypt Cinema</span>
+    <nav class="tabs">
+      <button class="tab active" data-view="movies">Movies</button>
+      <button class="tab" data-view="characters">Characters</button>
+    </nav>
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search movie..." aria-label="Search">
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </header>
+
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3 id="sidebarTitle">Subgenres</h3>
+      <nav id="topics"></nav>
+    </aside>
+
+    <!-- MAIN CONTAINER -->
+    <main class="main">
+      <h1 id="title">Horror movies</h1>
+      <p class="status" id="status">Summoning content...</p>
+      <div class="grid" id="grid"></div>
+    </main>
+  </div>
+
+  <!-- MODAL DE DETALLE -->
+  <div class="modal" id="modal">
+    <div class="modal-box" id="modalBox"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Crypt Cinema · Made by Axel Antonio Martinez ·  Professional Web Development class🦇</p>
+    <p>Data: <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank" rel="noopener">Wikipedia API</a></p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
